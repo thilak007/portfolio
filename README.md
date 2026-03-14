@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio — Thilak Raj Murugan
 
-## Getting Started
+Modern, minimal portfolio designed to drive recruiter callbacks for backend and distributed systems roles.
 
-First, run the development server:
+**Live:** http://localhost:3000
+
+## Design
+
+- **Style:** Modern SaaS landing page (Option 4)
+- **Layout:** Split hero with code visual, timeline experience, card-based sections
+- **Theme:** Light/dark with high contrast
+- **Typography:** Inter for readability, JetBrains Mono for code
+
+## Stack
+
+- Next.js 16 (App Router)
+- TypeScript
+- TailwindCSS
+- Framer Motion
+
+## Quick Start
 
 ```bash
+cd portfolio
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Build
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deploy
 
-## Learn More
+**Vercel** (recommended):
+```bash
+npx vercel
+```
 
-To learn more about Next.js, take a look at the following resources:
+**Docker**:
+```bash
+docker build -t portfolio .
+docker run -p 3000:3000 portfolio
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Customize
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Content** — Edit files in `src/components/`
+2. **Resume** — Replace `public/resume.pdf`
+3. **Colors** — Update `tailwind.config.ts`
 
-## Deploy on Vercel
+## Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+src/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+├── components/
+│   ├── Navigation.tsx    # Fixed header with theme toggle
+│   ├── Hero.tsx          # Split layout with code visual
+│   ├── About.tsx         # Bio + focus areas grid
+│   ├── Experience.tsx    # Timeline with expandable cards
+│   ├── Projects.tsx      # 2-column card grid
+│   ├── Skills.tsx        # 4-column skill categories
+│   ├── Contact.tsx       # 3-card contact layout
+│   └── Footer.tsx        # Minimal footer
+└── public/
+    └── resume.pdf
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Design Principles
+
+1. **Recruiter-first** — Scannable in 30 seconds
+2. **Impact-focused** — Metrics over responsibilities
+3. **Backend passion** — Code visual in hero, tech-forward language
+4. **Modern but professional** — SaaS aesthetic without being flashy
