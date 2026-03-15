@@ -1,14 +1,11 @@
 # Portfolio — Thilak Raj Murugan
 
-Modern, minimal portfolio designed to drive recruiter callbacks for backend and distributed systems roles.
-
-**Live:** http://localhost:3000
+A modern personal website showcasing my backend engineering work. Built to highlight my skills, experience, and projects in a clean, interactive format.
 
 ## Design
 
-- **Style:** Modern SaaS landing page (Option 4)
+- **Style:** Modern SaaS landing page
 - **Layout:** Split hero with code visual, timeline experience, card-based sections
-- **Theme:** Light/dark with high contrast
 - **Typography:** Inter for readability, JetBrains Mono for code
 
 ## Stack
@@ -71,10 +68,3 @@ src/
 └── public/
     └── resume.pdf
 ```
-
-## Design Principles
-
-1. **Recruiter-first** — Scannable in 30 seconds
-2. **Impact-focused** — Metrics over responsibilities
-3. **Backend passion** — Code visual in hero, tech-forward language
-4. **Modern but professional** — SaaS aesthetic without being flashy
