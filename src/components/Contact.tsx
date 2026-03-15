@@ -33,10 +33,10 @@ export function Contact() {
               Contact
             </h2>
             <h3 className="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-4">
-              Let&apos;s work together
+              Let&apos;s build something reliable at scale
             </h3>
             <p className="text-zinc-600 dark:text-zinc-400 max-w-md mx-auto">
-              I&apos;m seeking full-time backend and distributed systems roles starting 2026.
+              I&apos;m seeking full-time backend, distributed systems, and data platform roles starting in 2026.
             </p>
           </div>
 
@@ -45,7 +45,7 @@ export function Contact() {
             {/* Email */}
             <button
               onClick={handleCopyEmail}
-              className="group p-5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:border-blue-300 dark:hover:border-blue-700 hover:shadow-md transition-all text-left"
+              className="group p-5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white/90 dark:bg-zinc-900 hover:border-blue-300 dark:hover:border-blue-700 hover:shadow-md hover:shadow-blue-100/70 dark:hover:shadow-none transition-all text-left"
             >
               <div className="flex items-center gap-3 mb-2">
                 <div className="p-2 rounded-md bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400">
@@ -72,7 +72,7 @@ export function Contact() {
               href="https://linkedin.com/in/thilakrajm"
               target="_blank"
               rel="noopener noreferrer"
-              className="group p-5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:border-blue-300 dark:hover:border-blue-700 hover:shadow-md transition-all text-left"
+              className="group p-5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white/90 dark:bg-zinc-900 hover:border-blue-300 dark:hover:border-blue-700 hover:shadow-md hover:shadow-blue-100/70 dark:hover:shadow-none transition-all text-left"
             >
               <div className="flex items-center gap-3 mb-2">
                 <div className="p-2 rounded-md bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400">
@@ -95,7 +95,7 @@ export function Contact() {
               href="https://github.com/thilak007"
               target="_blank"
               rel="noopener noreferrer"
-              className="group p-5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:border-blue-300 dark:hover:border-blue-700 hover:shadow-md transition-all text-left"
+              className="group p-5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white/90 dark:bg-zinc-900 hover:border-blue-300 dark:hover:border-blue-700 hover:shadow-md hover:shadow-blue-100/70 dark:hover:shadow-none transition-all text-left"
             >
               <div className="flex items-center gap-3 mb-2">
                 <div className="p-2 rounded-md bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400">
@@ -119,7 +119,7 @@ export function Contact() {
             <a
               href="/resume.pdf"
               download
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-medium hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors shadow-lg shadow-zinc-900/20 dark:shadow-zinc-100/20"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-blue-600 text-white text-sm font-medium hover:bg-blue-500 transition-colors shadow-lg shadow-blue-500/20"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />

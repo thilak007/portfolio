@@ -6,6 +6,7 @@ const projects = [
   {
     title: 'Distributed Database Benchmarking',
     description: 'Performance analysis of TiDB and Cassandra at scale',
+    pdfHref: '/benchmarking-distributed-databases.pdf',
     details: [
       'Benchmarked TiDB with TPC-C/TPC-H workloads up to 190 GiB',
       'Ran Cassandra NoSQLBench tests with 200M+ operations',
@@ -15,12 +16,13 @@ const projects = [
     tech: ['Go', 'TiDB', 'Cassandra', 'TPC-C', 'NoSQLBench'],
   },
   {
-    title: 'Lambda Architecture Pipeline',
-    description: 'Stream and batch processing for analytics workloads',
+    title: 'Scalable Data Pipeline (Batch + Real-Time)',
+    description: 'Lambda architecture-based data pipeline for analytics workloads',
+    pdfHref: '/building-scalable-data-pipelines.pdf',
     details: [
       'Designed lambda architecture for NYC Taxi dataset analytics',
       'Batch layer: BigQuery and Dataproc for historical processing',
-      'Speed layer: Kafka and Spark Streaming for real-time analytics',
+      'Streaming layer: Kafka and Spark Streaming for real-time analytics',
       'BigQuery scanned 80GiB in <10s using columnar storage',
     ],
     tech: ['Kafka', 'Spark Streaming', 'BigQuery', 'Dataproc'],
@@ -40,8 +42,7 @@ const projects = [
     title: 'High-Throughput Recommendation Service',
     description: 'User recommendation engine at Vimeo',
     details: [
-      'Served 10M+ users with low-latency recommendations',
-      'Implemented Memcached caching layer',
+      'Served 10M+ users with low-latency recommendations by using Memcached for caching.',
       'Integrated Datadog for monitoring and alerting',
       'Drove 20% increase in free-to-paid conversion',
     ],
@@ -62,9 +63,13 @@ export function Projects() {
           viewport={{ once: true }}
           transition={{ duration: 0.4 }}
         >
-          <h2 className="text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-zinc-100 tracking-tight mb-6">
             Projects
           </h2>
+
+          <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-6 max-w-3xl">
+            Selected backend, distributed systems, and data engineering projects that demonstrate depth in performance, reliability, and scale.
+          </p>
 
           <div className="grid md:grid-cols-2 gap-4">
             {projects.map((project, index) => (
@@ -74,13 +79,23 @@ export function Projects() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
-                whileHover={{ y: -2 }}
-                className="group p-5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:border-blue-300 dark:hover:border-blue-700 hover:shadow-lg transition-all duration-300"
+                whileHover={{ y: -3 }}
+                className="group p-5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white/90 dark:bg-zinc-900 hover:border-blue-300 dark:hover:border-blue-700 hover:shadow-lg hover:shadow-blue-100/70 dark:hover:shadow-none transition-all duration-300"
               >
-                <div className="flex items-start justify-between mb-2">
+                <div className="flex items-start justify-between mb-2 gap-3">
                   <h3 className="font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                     {project.title}
                   </h3>
+                  {project.pdfHref && (
+                    <a
+                      href={project.pdfHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="shrink-0 inline-flex items-center px-2 py-1 rounded text-xs bg-blue-600 text-white hover:bg-blue-500 transition-colors"
+                    >
+                      PDF
+                    </a>
+                  )}
                 </div>
                 <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">
                   {project.description}

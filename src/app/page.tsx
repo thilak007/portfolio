@@ -3,6 +3,7 @@ import {
   Hero,
   Experience,
   Projects,
+  CodingProfiles,
   Skills,
   Contact,
   Footer,
@@ -23,6 +24,7 @@ export default function Home() {
       <Hero />
       <Experience />
       <Projects />
+      <CodingProfiles />
       <Skills />
       <Contact />
       <Footer />

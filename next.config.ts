@@ -7,6 +7,20 @@ const nextConfig: NextConfig = {
   // Optimize images
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'leetcard.jacoblin.cool',
+      },
+      {
+        protocol: 'https',
+        hostname: 'github.r2v.ch',
+      },
+      {
+        protocol: 'https',
+        hostname: 'streak-stats.demolab.com',
+      },
+    ],
   },
   
   // Minify output
