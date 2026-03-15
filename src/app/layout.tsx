@@ -33,6 +33,11 @@ export const metadata: Metadata = {
     title: "Thilak Raj Murugan — Backend & Distributed Systems Engineer",
     description: "Building scalable infrastructure and distributed systems.",
     type: "website",
+    images: ['/logo.jpg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/logo.jpg'],
   },
 };
 
