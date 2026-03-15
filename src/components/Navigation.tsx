@@ -86,7 +86,7 @@ export function Navigation() {
             href="#"
             className="text-sm font-semibold text-zinc-900 dark:text-zinc-100 hover:text-blue-600 dark:hover:text-zinc-400 transition-colors"
           >
-            Thilak.dev
+            Thilak Raj
           </a>
 
           {/* Desktop Nav */}

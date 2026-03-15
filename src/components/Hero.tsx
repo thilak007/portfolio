@@ -201,7 +201,7 @@ export function Hero() {
             
             <div className="space-y-4 mb-8">
               <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
-                I build <strong className="text-blue-600 dark:text-blue-400 font-semibold">backend and distributed systems</strong> and <strong className="text-blue-600 dark:text-blue-400 font-semibold">ML infrastructure</strong> that serve millions of users. I&apos;m graduating soon with a <strong className="text-zinc-900 dark:text-zinc-100 font-semibold">MS in Data Engineering</strong> at UW–Madison (Spring 2026).
+                I build <strong className="text-blue-600 dark:text-blue-400 font-semibold">backend, distributed systems</strong> and <strong className="text-blue-600 dark:text-blue-400 font-semibold">ML infrastructure</strong> that serve millions of users. I&apos;m graduating soon with a <strong className="text-zinc-900 dark:text-zinc-100 font-semibold">MS in Data Engineering</strong> at UW–Madison (Spring 2026).
               </p>
               <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
                 Across Vimeo, PropertyGuru, Hiver, and American Family Insurance, I&apos;ve owned work spanning high-throughput user recommendations, billing systems, and cloud-scale ML inference.
