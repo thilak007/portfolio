@@ -46,12 +46,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const initialTheme = 'dark';
-
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <body className={`${inter.variable} ${jetbrainsMono.variable} antialiased text-zinc-900 dark:text-zinc-100`}>
-        <ThemeProvider initialTheme={initialTheme}>{children}</ThemeProvider>
+      <body className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}>
+        <ThemeProvider initialTheme="dark">{children}</ThemeProvider>
         <Analytics />
         <SpeedInsights />
       </body>
