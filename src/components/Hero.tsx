@@ -253,7 +253,7 @@ export function Hero() {
                 View Experience
               </a>
               <a
-                href="/resume.pdf"
+                href="/resume-v2.pdf"
                 download
                 className="inline-flex items-center justify-center gap-1.5 px-5 py-2.5 rounded-lg bg-blue-600 text-white text-sm font-medium hover:bg-blue-500 transition-colors"
               >

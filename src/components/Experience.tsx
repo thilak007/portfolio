@@ -12,8 +12,7 @@ const experiences = [
     duration: 'May 2025 – Aug 2025',
     highlights: [
       'Built ML model serving for batch inference on Google Batch, scaling periodic inference across 1M+ BigQuery rows per run.',
-      'Developed Infrastructure as Code with Terraform, GitLab CI/CD, Docker, and Python to provision Cloud Scheduler, Cloud Functions, and Cloud Storage.',
-      'Automated the end-to-end deployment pipeline, reducing manual effort and improving operational efficiency.',
+      'Developed Infrastructure as Code (IaC) with Terraform, GitLab CI/CD, Docker and Python to provision GCP resources, thus automating the end-to-end deployment pipeline and reducing deployment time by 80%',
     ],
     tech: [
       'Python',

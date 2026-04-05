@@ -117,7 +117,7 @@ export function Contact() {
           {/* Resume CTA */}
           <div className="text-center">
             <a
-              href="/resume.pdf"
+              href="/resume-v2.pdf"
               download
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-blue-600 text-white text-sm font-medium hover:bg-blue-500 transition-colors shadow-lg shadow-blue-500/20"
             >
