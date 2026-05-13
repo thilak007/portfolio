@@ -4,6 +4,16 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
+    title: 'Distributed KV Store',
+    description: 'Replicated each partition with Raft consensus algorithm',
+    codeHref: 'https://github.com/thilak007/kv-store',
+    details: [
+      'Built a distributed, fault-tolerant key-value store in Go with horizontal scalability via sharding and Raft-based replication for strong consistency.',
+      'Achieved throughput of 23K ops/sec and made the data durable using bbolt storage engine.',
+    ],
+    tech: ['Go', 'Raft', 'Sharding', 'bbolt', 'Distributed Systems'],
+  },
+  {
     title: 'Distributed Database Benchmarking',
     description: 'Performance analysis of TiDB and Cassandra at scale',
     pdfHref: '/benchmarking-distributed-databases.pdf',
@@ -16,7 +26,7 @@ const projects = [
     tech: ['Go', 'TiDB', 'Cassandra', 'TPC-C', 'NoSQLBench'],
   },
   {
-    title: 'Scalable Data Pipeline (Batch + Real-Time)',
+    title: 'Scalable Data Analytics Pipeline (Batch + Real-Time)',
     description: 'Lambda architecture-based data pipeline for analytics workloads',
     pdfHref: '/building-scalable-data-pipelines.pdf',
     details: [
@@ -37,16 +47,6 @@ const projects = [
       'Automated CI/CD with GitLab',
     ],
     tech: ['Python', 'Terraform', 'GCP', 'BigQuery', 'GitLab CI/CD'],
-  },
-  {
-    title: 'High-Throughput Recommendation Service',
-    description: 'User recommendation engine at Vimeo',
-    details: [
-      'Served 10M+ users with low-latency recommendations by using Memcached for caching.',
-      'Integrated Datadog for monitoring and alerting',
-      'Drove 20% increase in free-to-paid conversion',
-    ],
-    tech: ['PHP', 'MySQL', 'Memcached', 'Datadog', 'Python', 'Go'],
   },
 ];
 
@@ -86,16 +86,28 @@ export function Projects() {
                   <h3 className="font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                     {project.title}
                   </h3>
-                  {project.pdfHref && (
-                    <a
-                      href={project.pdfHref}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="shrink-0 inline-flex items-center px-2 py-1 rounded text-xs bg-blue-600 text-white hover:bg-blue-500 transition-colors"
-                    >
-                      PDF
-                    </a>
-                  )}
+                  <div className="shrink-0 flex items-center gap-2">
+                    {project.codeHref && (
+                      <a
+                        href={project.codeHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-2 py-1 rounded text-xs bg-blue-600 text-white hover:bg-blue-500 transition-colors"
+                      >
+                        Code
+                      </a>
+                    )}
+                    {project.pdfHref && (
+                      <a
+                        href={project.pdfHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-2 py-1 rounded text-xs bg-blue-600 text-white hover:bg-blue-500 transition-colors"
+                      >
+                        PDF
+                      </a>
+                    )}
+                  </div>
                 </div>
                 <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">
                   {project.description}

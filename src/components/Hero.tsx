@@ -190,7 +190,7 @@ export function Hero() {
               className="inline-flex items-center gap-2 mb-3 px-2.5 py-1 rounded-md bg-blue-100/80 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 text-xs font-semibold"
             >
               <span className="h-1.5 w-1.5 rounded-full bg-blue-600" />
-              Backend Engineer · Distributed Systems
+              Software Engineer · Distributed Systems
             </motion.div>
 
             <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-3">Hi, I&apos;m</p>
@@ -201,7 +201,7 @@ export function Hero() {
             
             <div className="space-y-4 mb-8">
               <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
-                I build <strong className="text-blue-600 dark:text-blue-400 font-semibold">backend, distributed systems</strong> and <strong className="text-blue-600 dark:text-blue-400 font-semibold">ML infrastructure</strong> that serve millions of users. I&apos;m graduating soon with a <strong className="text-zinc-900 dark:text-zinc-100 font-semibold">MS in Data Engineering</strong> at UW–Madison (Spring 2026).
+                I'm a Software Engineer with experience in building <strong className="text-blue-600 dark:text-blue-400 font-semibold">backend, distributed systems</strong> and <strong className="text-blue-600 dark:text-blue-400 font-semibold">ML infrastructure</strong> that serve millions of users. I graduated with a <strong className="text-zinc-900 dark:text-zinc-100 font-semibold">Master's in Data Engineering</strong> from UW–Madison (Spring 2026).
               </p>
               <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
                 Across Vimeo, PropertyGuru, Hiver, and American Family Insurance, I&apos;ve owned work spanning high-throughput user recommendations, billing systems, and cloud-scale ML inference.
@@ -253,7 +253,7 @@ export function Hero() {
                 View Experience
               </a>
               <a
-                href="/resume-v2.pdf"
+                href="/resume-v3.pdf"
                 download
                 className="inline-flex items-center justify-center gap-1.5 px-5 py-2.5 rounded-lg bg-blue-600 text-white text-sm font-medium hover:bg-blue-500 transition-colors"
               >
