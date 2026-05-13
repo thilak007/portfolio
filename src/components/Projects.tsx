@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 const projects = [
   {
     title: 'Distributed KV Store',
+    image: '/project-images/kvstore-architecture-diagram.png',
     description: 'Replicated each partition with Raft consensus algorithm',
     codeHref: 'https://github.com/thilak007/kv-store',
     details: [
@@ -15,36 +16,39 @@ const projects = [
   },
   {
     title: 'Distributed Database Benchmarking',
+    image: '/project-images/tidb-architecture.jpeg',
     description: 'Performance analysis of TiDB and Cassandra at scale',
     pdfHref: '/benchmarking-distributed-databases.pdf',
     details: [
-      'Benchmarked TiDB with TPC-C/TPC-H workloads up to 190 GiB',
-      'Ran Cassandra NoSQLBench tests with 200M+ operations',
-      'Measured throughput, latency (90ms OLTP), and Raft replication lag',
-      'Cassandra achieved 9K ops/sec with <1ms query latency',
+      'Benchmarked TiDB with TPC-C/TPC-H workloads up to 190 GiB.',
+      'Ran Cassandra NoSQLBench tests with 200M+ operations.',
+      'Measured throughput, latency (90ms OLTP), and Raft replication lag.',
+      'Cassandra achieved 9K ops/sec with <1ms query latency.',
     ],
     tech: ['Go', 'TiDB', 'Cassandra', 'TPC-C', 'NoSQLBench'],
   },
   {
     title: 'Scalable Data Analytics Pipeline (Batch + Real-Time)',
+    image: '/project-images/databloom-architecture.jpg',
     description: 'Lambda architecture-based data pipeline for analytics workloads',
     pdfHref: '/building-scalable-data-pipelines.pdf',
     details: [
-      'Designed lambda architecture for NYC Taxi dataset analytics',
-      'Batch layer: BigQuery and Dataproc for historical processing',
-      'Streaming layer: Kafka and Spark Streaming for real-time analytics',
-      'BigQuery scanned 80GiB in <10s using columnar storage',
+      'Designed lambda architecture for NYC Taxi dataset analytics.',
+      'Batch layer: BigQuery and Dataproc for historical processing.',
+      'Streaming layer: Kafka and Spark Streaming for real-time analytics.',
+      'BigQuery scanned 80GiB in <10s using columnar storage.',
     ],
     tech: ['Kafka', 'Spark Streaming', 'BigQuery', 'Dataproc'],
   },
   {
     title: 'ML Inference on Google Cloud',
+    image: '/project-images/mlops-loop.jpg',
     description: 'Production batch inference infrastructure',
     details: [
-      'Built ML serving pipeline on Google Batch',
-      'Scaled to 1M+ BigQuery rows per batch run',
-      'Provisioned infrastructure with Terraform (Cloud Scheduler, Functions)',
-      'Automated CI/CD with GitLab',
+      'Built ML serving pipeline on Google Batch.',
+      'Scaled to 1M+ BigQuery rows per batch run.',
+      'Provisioned infrastructure with Terraform (Cloud Scheduler, Functions).',
+      'Automated CI/CD with GitLab.',
     ],
     tech: ['Python', 'Terraform', 'GCP', 'BigQuery', 'GitLab CI/CD'],
   },
@@ -80,7 +84,16 @@ export function Projects() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
                 whileHover={{ y: -3 }}
-                className="group p-5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white/90 dark:bg-zinc-900 hover:border-blue-300 dark:hover:border-blue-700 hover:shadow-lg hover:shadow-blue-100/70 dark:hover:shadow-none transition-all duration-300"
+                onClick={() => {
+                  if (project.codeHref) {
+                    window.open(project.codeHref, '_blank');
+                  } else if (project.pdfHref) {
+                    window.open(project.pdfHref, '_blank');
+                  }
+                }}
+                className={`group p-5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white/90 dark:bg-zinc-900 hover:border-blue-300 dark:hover:border-blue-700 hover:shadow-lg hover:shadow-blue-100/70 dark:hover:shadow-none transition-all duration-300 ${
+                  (project.codeHref || project.pdfHref) ? 'cursor-pointer' : ''
+                }`}
               >
                 <div className="flex items-start justify-between mb-2 gap-3">
                   <h3 className="font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
@@ -112,6 +125,15 @@ export function Projects() {
                 <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">
                   {project.description}
                 </p>
+                {project.image && (
+                  <div className="mb-4">
+                    <img
+                      src={project.image}
+                      alt={`${project.title} architecture`}
+                      className="w-full h-90 object-cover rounded"
+                    />
+                  </div>
+                )}
                 
                 <ul className="space-y-1.5 mb-4">
                   {project.details.map((detail, i) => (
