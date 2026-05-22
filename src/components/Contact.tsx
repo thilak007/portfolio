@@ -8,10 +8,12 @@ import { useState } from 'react';
  */
 export function Contact() {
   const [copiedEmail, setCopiedEmail] = useState(false);
+  const encEmail = 'bXRoaWxha3Jhajk2QGdtYWlsLmNvbQ==';
+  const emailDisplay = 'mthilakraj96 [at] gmail [dot] com';
 
   const handleCopyEmail = async () => {
     try {
-      await navigator.clipboard.writeText('thilakraj.murugan@wisc.edu');
+      await navigator.clipboard.writeText(atob(encEmail));
       setCopiedEmail(true);
       setTimeout(() => setCopiedEmail(false), 2000);
     } catch (err) {
@@ -44,6 +46,7 @@ export function Contact() {
           <div className="grid sm:grid-cols-3 gap-4 mb-8">
             {/* Email */}
             <button
+              type="button"
               onClick={handleCopyEmail}
               className="group p-5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white/90 dark:bg-zinc-900 hover:border-blue-300 dark:hover:border-blue-700 hover:shadow-md hover:shadow-blue-100/70 dark:hover:shadow-none transition-all text-left"
             >
@@ -59,11 +62,11 @@ export function Contact() {
                 {copiedEmail ? (
                   <span className="text-green-600 dark:text-green-400 font-medium">Copied!</span>
                 ) : (
-                  'thilakraj.murugan@wisc.edu'
+                  emailDisplay
                 )}
               </p>
               <p className="text-xs text-zinc-400 dark:text-zinc-500">
-                Click to copy
+                Click to copy email ID!
               </p>
             </button>
 
@@ -86,7 +89,7 @@ export function Contact() {
                 linkedin.com/in/thilakrajm
               </p>
               <p className="text-xs text-zinc-400 dark:text-zinc-500">
-                Connect professionally
+                Let's chat!
               </p>
             </a>
 

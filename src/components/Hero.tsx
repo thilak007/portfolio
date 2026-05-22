@@ -88,7 +88,7 @@ export function Hero() {
   const keyStats = [
     { value: '5+', label: 'Years Exp', href: '#experience', highlight: true },
     { value: '10M+', label: 'Users Served', href: '#projects', highlight: false },
-    { value: '3.95', label: 'MS GPA', href: '#skills', highlight: false },
+    { value: '3.9', label: 'MS GPA', href: '#skills', highlight: false },
   ];
 
   const passionPoints = [
@@ -201,7 +201,7 @@ export function Hero() {
             
             <div className="space-y-4 mb-8">
               <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
-                I'm a Software Engineer with experience in building <strong className="text-blue-600 dark:text-blue-400 font-semibold">backend, distributed systems</strong> and <strong className="text-blue-600 dark:text-blue-400 font-semibold">ML infrastructure</strong> that serve millions of users. I graduated with a <strong className="text-zinc-900 dark:text-zinc-100 font-semibold">Master's in Data Engineering</strong> from UW–Madison (Spring 2026).
+                I'm a Software Engineer with 5+ years of experience in building <strong className="text-blue-600 dark:text-blue-400 font-semibold">backend, distributed systems</strong> and <strong className="text-blue-600 dark:text-blue-400 font-semibold">ML infrastructure</strong> that serve millions of users. I hold a <strong className="text-zinc-900 dark:text-zinc-100 font-semibold">Master's in Data Engineering</strong> from UW–Madison (Public Ivy).
               </p>
               <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
                 Across Vimeo, PropertyGuru, Hiver, and American Family Insurance, I&apos;ve owned work spanning high-throughput user recommendations, billing systems, and cloud-scale ML inference.

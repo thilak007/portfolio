@@ -1,12 +1,23 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useEffect, useRef } from 'react';
 
 /**
  * Minimal footer
  */
 export function Footer() {
   const year = new Date().getFullYear();
+  const emailLinkRef = useRef<HTMLAnchorElement>(null);
+
+  useEffect(() => {
+    const encEmail = 'bXRoaWxha3Jhajk2QGdtYWlsLmNvbQ==';
+    const emailLink = emailLinkRef.current;
+
+    if (emailLink) {
+      emailLink.setAttribute('href', `mailto:${atob(encEmail)}`);
+    }
+  }, []);
 
   return (
     <footer className="py-8 px-4 sm:px-6 border-t border-zinc-200 dark:border-zinc-800">
@@ -53,7 +64,8 @@ export function Footer() {
               </svg>
             </a>
             <a
-              href="mailto:thilakraj.murugan@wisc.edu"
+              ref={emailLinkRef}
+              href="#"
               className="text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
               aria-label="Email"
             >
