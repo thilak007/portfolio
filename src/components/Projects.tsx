@@ -45,12 +45,11 @@ const projects = [
     image: '/project-images/mlops-loop.jpg',
     description: 'Production batch inference infrastructure',
     details: [
-      'Built ML serving pipeline on Google Batch.',
-      'Scaled to 1M+ BigQuery rows per batch run.',
-      'Provisioned infrastructure with Terraform (Cloud Scheduler, Functions).',
+      'Built ML inference pipeline on Google Batch service. Scaled to 1M+ BigQuery rows per run.',
+      'Provisioned infrastructure with Terraform (GCS Buckets, Cloud Scheduler, Functions)',
       'Automated CI/CD with GitLab.',
     ],
-    tech: ['Python', 'Terraform', 'GCP', 'BigQuery', 'GitLab CI/CD'],
+    tech: ['Python', 'Terraform', 'GCP', 'BigQuery', 'GitLab CI/CD', 'Docker'],
   },
 ];
 
