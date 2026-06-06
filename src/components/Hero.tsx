@@ -176,7 +176,7 @@ export function Hero() {
               </div>
 
               <p className="mt-4 text-sm italic text-zinc-500 dark:text-zinc-400 border-t border-zinc-200 dark:border-zinc-800 pt-3">
-                “Passionate about petabyte-scale storage systems!”
+                “Passionate about petabyte-scale infrastructure!”
               </p>
             </motion.div>
           </div>
@@ -201,7 +201,7 @@ export function Hero() {
             
             <div className="space-y-4 mb-8">
               <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
-                I'm a Software Engineer with 5+ years of experience in building <strong className="text-blue-600 dark:text-blue-400 font-semibold">backend, distributed systems</strong> and <strong className="text-blue-600 dark:text-blue-400 font-semibold">ML infrastructure</strong> that serve millions of users. I hold a <strong className="text-zinc-900 dark:text-zinc-100 font-semibold">Master's in Data Engineering</strong> from UW–Madison (Public Ivy).
+                I'm a Software Engineer with 5+ years of experience in building <strong className="text-blue-600 dark:text-blue-400 font-semibold">backend, distributed systems</strong> and <strong className="text-blue-600 dark:text-blue-400 font-semibold">AI Infrastructure</strong> that serve millions of users. I hold a <strong className="text-zinc-900 dark:text-zinc-100 font-semibold">Master's in Data Infrastructure</strong> from UW–Madison (Public Ivy).
               </p>
               <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
                 Across Vimeo, PropertyGuru, Hiver, and American Family Insurance, I&apos;ve owned work spanning high-throughput user recommendations, billing systems, and cloud-scale ML inference.

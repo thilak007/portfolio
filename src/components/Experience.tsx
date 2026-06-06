@@ -7,11 +7,11 @@ const experiences = [
   {
     company: 'American Family Insurance',
     companyHref: 'https://www.amfam.com/',
-    role: 'MLOps Intern, ML Infrastructure',
+    role: 'MLOps Intern, AI Infrastructure',
     location: 'Madison, WI',
     duration: 'May 2025 – Aug 2025',
     highlights: [
-      'Built ML model serving for batch inference on Google Batch, scaling periodic inference across 1M+ BigQuery rows per run.',
+      'Engineered an AI Inference platform on GCP that autoscales inference across 1M+ BigQuery rows, eliminating infrastructure provisioning friction for AI engineers.',
       'Developed Infrastructure as Code (IaC) with Terraform, GitLab CI/CD, Docker and Python to provision GCP resources, thus automating the end-to-end deployment pipeline and reducing deployment time by 80%',
     ],
     tech: [
@@ -56,7 +56,7 @@ const experiences = [
     location: 'Bengaluru, India',
     duration: 'Jul 2021 – May 2023',
     highlights: [
-      'Developed and maintained backend microservices in Nest.js, Node.js, and Symfony (a PHP framework) for agent and buyer workflows in the property-tech domain.',
+      'Built and scaled multiple backend microservices using Nest.js, Node.js, and Symfony (PHP), serving 11M+ users across the property-tech industry in South-East Asia.',
       'Reduced config API latency by 25% using Redis caching and automated cache invalidation, improving efficiency for non-engineering teams.',
       'Built frontend pages and micro-frontends with TypeScript, React, Redux, and Material UI; improved maintainability by adding unit tests with Jest.',
     ],
@@ -79,7 +79,7 @@ const experiences = [
     location: 'Bengaluru, India',
     duration: 'May 2019 – Jun 2021',
     highlights: [
-      'Led the overhaul of the billing system for a Gmail-based shared inbox product, boosting revenue growth.',
+      'Led the payment platform overhaul, driving 3× ARR growth for the Gmail-based shared inbox product.',
       'Automated & optimized payment processing using the Stripe SDK across Python and PHP services, leveraging webhooks and RabbitMQ.',
       'Implemented multi-factor authentication (MFA/SCA) for EU transactions.',
     ],

@@ -36,7 +36,7 @@ export function Footer() {
               Backend & Distributed Systems Engineer · Open to full-time roles in 2026
             </p>
             <p className="text-xs italic text-blue-600 dark:text-blue-400 mt-1.5">
-              “Passionate about petabyte-scale storage systems!”
+              “Passionate about petabyte-scale infrastructure!”
             </p>
           </div>
           

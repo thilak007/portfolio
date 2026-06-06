@@ -20,11 +20,11 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Thilak Raj Murugan — Backend & Distributed Systems Engineer",
   description:
-    "Backend engineer specializing in distributed systems, databases, and ML infrastructure. 5+ years building scalable systems at Vimeo, PropertyGuru, and more.",
+    "Backend engineer specializing in distributed systems, databases, and AI Infrastructure. 5+ years building scalable systems at Vimeo, PropertyGuru, and more.",
   keywords: [
     "Backend Engineer",
     "Distributed Systems",
-    "ML Infrastructure",
+    "AI Infrastructure",
     "Data Engineering",
     "Systems Engineer",
   ],
